@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+<meta charset=”utf-8" />
+<meta name=”viewport” content=width=device-width, initial-scale=1.0" />
+<title>Cafe Menu</title>
+<link href=”styles.css” rel=”stylesheet”/>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label for="title">Name<input id="name" name="name" type="text" placeholder="Enter your name" required /></label>
+        <label for="title">Email<input id="email" name="email" type="email" placeholder="Enter your email" required /></label>
+        <label for="title">Age<input id="number" name="new-number" type="number" min="18" max="921" placeholder="Age" required /></label>
+        
+         </fieldset>
+
+         <!-- dropdown menu -->
+         <fieldset>
+        <label for="title">Which option best describes your current role?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select current role)</option>
+            <option value="1">Student</option>
+            <option value="2">Medicine</option>
+            <option value="3">Design</option>
+            <option value="4">Engineer</option>
+            <option value="5">Others</option>
+          </select>
+        </label>
+        <!-- radio format must <name> -->
+        
+          <p class="caption"> What is your gender?</p>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" value="value"/> Female</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" value="value"/> Male</label>
+   
+        <!-- checkboxes  must <value>-->
+          
+        <label for="terms-and-conditions" name="terms-and-conditions">
+          <p class="caption"> What usually do you do at night?</p>
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value="value"/> tends to drink about 1000ml water
+        </label>
+        <label for="terms-and-conditions" name="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value="value"/> watch TV for 1 hour
+        </label>
+        <label for="terms-and-conditions" name="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value="value"/> strech and meditation 
+        </label>
+        </fieldset>
+
+<!-- 用<textarea> are for comments -->
+<fieldset>
+<label for="select">Any comments or suggestions?
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+        </label>
+
+<!-- 送出按鈕 -->
+
+ </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+      
+    </form>
+</body>
+    
