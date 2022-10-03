@@ -24,11 +24,12 @@ h1, p {
   color:#BFF7F5;
 }
 
-a .h1-link{
+.h1-link{
   color:#BFF7F5;
+  text-decoration:none;
 }
 
-a .h1-link:hover{
+.h1-link:hover{
   text-decoration:underline #BFF7F5 solid;
 }
 
