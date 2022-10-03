@@ -11,27 +11,41 @@ body {
 }
 
 h1{
-  font-size:5rem;
-  margin-bottom:0;
+  max-width: 37.25rem;
+  padding: 1.5rem 1.25rem;
+  margin:0 auto;
+  font-size:3rem;
+  text-align:center;
 }
 
-p{
-  font-size:1.4rem;
-}
-
-h1, p {
-  margin: 1em auto;
-  text-align: center;
+h1 .flex {
+  display: flex;
+  /* 反褶 */
+  flex-direction: column;
+  /* 留白 */
+  gap: 1rem;
   color:#BFF7F5;
 }
 
-.h1-link{
-  color:#BFF7F5;
+/* :first-of-type會對 1st element 編譯 */
+h1 .flex span:first-of-type{
+  font-size:1.2em;
+}
+ 
+/* :last-of-type 對 最後一個 element 編譯  */
+h1 .flex span:last-of-type{
+  font-size:0.7em;
+}
+
+h1 .flex span a{
+  color:#00d4ff;
   text-decoration:none;
 }
 
-.h1-link:hover{
-  text-decoration:underline #BFF7F5 solid;
+h1 .flex span a:hover{
+  background-color:#fec936;
+  color:#000;
+  text-decoration:none;
 }
 
 .caption{
